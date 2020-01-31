@@ -1,6 +1,8 @@
-body {background-image: url('/img/glitch1-header.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+body {
+	
+	background-image: url('/img/glitch1-header.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 .main_div{
 	width: 50%;
