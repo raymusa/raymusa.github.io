@@ -1,4 +1,4 @@
-body {background-image: url("img/glitch-header1.png");
+body {background-image: src=("img/glitch-header1.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
 
