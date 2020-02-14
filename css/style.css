@@ -2,7 +2,6 @@ body {
 	
 	background-image: url('/img/giphy.gif');
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 }
 .main_div{
 	width: 50%;
