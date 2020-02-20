@@ -1,7 +1,7 @@
 #package{
 	width: 720px;
 	height: 240px;
-	background-color: orange;
+	background-color: red;
 	/* horizontal + vertical center align - parent div */
 	position: relative;
 	/*//////*/
