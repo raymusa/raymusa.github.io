@@ -21,7 +21,7 @@
 	font-style: impact;
 	font-weight: bold;
 	-webkit-text-stroke-width: 3px;
-	-webkit-text-stroke-color: darkred;
+	-webkit-text-stroke-color: saddlebrown;
 	letter-spacing: -3px;
 }
 
@@ -52,14 +52,14 @@
 	font-size: 9px;
 	text-align: center;
 	background-color:white;
-	border:3px solid brown;
+	border:3px solid saddlebrown;
 	border-radius: 12%;
 	padding: 6px;
 }
 
 #cal_number{
 	font-size: 19px;
-	font-color:brown;
+	font-color:saddlebrown;
 }
 
 #kitkat_img_container{
