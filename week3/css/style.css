@@ -21,7 +21,7 @@
 	font-weight: bold;
 	-webkit-text-stroke-width: 3px;
 	-webkit-text-stroke-color: saddlebrown;
-	letter-spacing: -3px;
+	letter-spacing: 3px;
 }
 
 #subtitle{
@@ -30,7 +30,7 @@
     left: 50%;
     font-family: sans-serif;
     font-style: italic;
-    font-color: saddlebrown;
+    font-color:saddlebrown;
     font-weight: bold;
     letter-spacing: 4px;
     font-size: 24px;
@@ -64,7 +64,7 @@
 	left: 50%;
     font-family: sans-serif;
     font-style: italic;
-    font-color: brown;
+    font-color:saddlebrown;
     font-weight: bold;
     letter-spacing: 4px;
     font-size: 12px;
