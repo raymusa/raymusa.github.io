@@ -25,10 +25,9 @@
 
 
 #subtitle{
-	position: absolute;
-    bottom: 24%;
-    left: 50%;
-    font-family: sans-serif;
+position: absolute;
+bottom: 24%;
+left: 50%;
     font-style: italic;
     font-color:#663300;
     font-weight: bold;
