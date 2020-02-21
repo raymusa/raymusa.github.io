@@ -26,14 +26,14 @@
 
 #subtitle{
 	position: absolute;
-	top: 24%;
-	left: 50%;
-	font-family: sans-serif;
-	font-style: italic;
-	font-color: saddlebrown;
-	font-weight: bold;
-	letter-spacing: 4px;
-	font-size: 12px;
+    bottom: 24%;
+    left: 50%;
+    font-family: sans-serif;
+    font-style: italic;
+    font-color: saddlebrown;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 24px;
 }
 
 #weight{
@@ -59,15 +59,16 @@
 }
 
 #subtitle2{
-	position: absolute;
-	bottom: 30%;
+	    position: absolute;
+    bottom: 16%;
 	left: 50%;
-	font-family: sans-serif;
-	font-style: italic;
-	font-color: brown;
-	font-weight: bold;
-	letter-spacing: 4px;
-	font-size: 12px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-color: brown;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 12px;
+	
 }
 
 #cal_number{
