@@ -75,6 +75,8 @@
 
 #kitkat_img_container{
 	width: 720px;
+	position: absolute;
+	top: 420px;
 }
 
 #kitkat_img{
