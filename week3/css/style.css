@@ -17,11 +17,11 @@
 	/*//////*/
 	font-size: 100px;
 	color:white;
+	font-style: sans-serif;
 	font-style:italic;
 	font-weight: bold;
 	-webkit-text-stroke-width: 3px;
 	-webkit-text-stroke-color: #663300;
-	letter-spacing: 3px;
 }
 
 #subtitle{
@@ -32,7 +32,7 @@
     font-style: italic;
     font-color:#663300;
     font-weight: bold;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     font-size: 24px;
 }
 
@@ -61,14 +61,11 @@
 #subtitle2{
 	    position: absolute;
     bottom: 16%;
-	left: 50%;
+    left: 50%;
     font-family: sans-serif;
-    font-style: italic;
-    font-color:#663300;
+    font-style: oblique;
     font-weight: bold;
-    letter-spacing: 4px;
-    font-size: 12px;
-	
+    font-size: 12px;	
 }
 
 #cal_number{
