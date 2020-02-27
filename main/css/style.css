@@ -11,6 +11,7 @@ body{
 	transform: translate(-50%, -50%);
 	font-family: 'Oxanium',sans-serif ;
 	font-size: 80px;
+	text-shadow: 4px 4px 4px #aaa;
 	transition: -webkit-text-stroke-color 2s, color 2s;
 }
 
@@ -18,7 +19,6 @@ body{
 	color:transparent;
 	-webkit-text-stroke-width: 3px;
 	-webkit-text-stroke-color: skyblue;
-	 text-shadow: 4px 4px 4px #aaa;
 }
 	
 .menu{
