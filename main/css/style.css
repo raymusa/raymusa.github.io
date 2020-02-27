@@ -13,11 +13,14 @@ body{
 	font-size: 80px;
 	transition: -webkit-text-stroke-color 2s, color 2s;
 }
+
 .title:hover{
 	color:transparent;
-	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: black;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: skyblue;
+	 text-shadow: 4px 4px 4px #aaa;
 }
+	
 .menu{
 	margin:24px;
 }
