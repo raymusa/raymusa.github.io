@@ -11,6 +11,7 @@ body{
 	transform: translate(-50%, -50%);
 	font-family: 'Oxanium',sans-serif ;
 	font-size: 80px;
+	color:white
 	text-shadow: 4px 4px 4px #aaa;
 	transition: -webkit-text-stroke-color 2s, color 2s;
 }
@@ -18,7 +19,7 @@ body{
 .title:hover{
 	color:transparent;
 	-webkit-text-stroke-width: 3px;
-	-webkit-text-stroke-color: skyblue;
+	-webkit-text-stroke-color: white;
 }
 	
 .menu{
@@ -30,6 +31,7 @@ body{
   	padding: 0;
   	font-family: 'Oxanium', sans-serif;
   	font-size: 80px;
+	color:white
 }
 .work_list{
 	list-style-type: none;
@@ -37,6 +39,7 @@ body{
   	padding: 0;
   	font-family: 'Oxanium', sans-serif;
   	font-size: 28px;
+	color:white 
 }
 #menu_home:hover{
 	color:white;
