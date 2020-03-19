@@ -10,7 +10,7 @@ body{
 	.landing_animation_container{
 	width: 100%;
 	height: 100%;
-	background: black;
+	background: white;
 	position: fixed;
 	top:0;
 	left:0;
@@ -27,7 +27,6 @@ body{
 	100% { opacity: 0; z-index: -1;}
 }
 
-}
 
 
 .title{
@@ -39,6 +38,7 @@ body{
 	font-size: 80px;
 	color:white;
 	text-shadow: 2px 2px #D4E6F1;
+	text-align:center;
 	transition: -webkit-text-stroke-color 2s, color 2s;
 }
 
