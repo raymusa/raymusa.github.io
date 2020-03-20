@@ -2,6 +2,7 @@ body{
 	background-image: url('../../img/cloudloop.gif');
 	background-size: cover;
 	height: 100vh;
+	width: 100vw;
 	padding:0;
 	margin:0;
 }
@@ -33,7 +34,7 @@ body{
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-family: 'American Typewriter',sans-serif ;
-	font-size: 80px;
+	font-size: 8vw;
 	color:#FFFEFE;
 	text-shadow: 3px 3px #94949B;
 	text-align:center;
@@ -54,7 +55,7 @@ body{
   	margin: 0;
   	padding: 0;
   	font-family: 'American Typewriter', sans-serif;
-  	font-size: 80px;
+  	font-size: 8vw;
 	color:#FFFEFE;
 	text-shadow: 3px 3px #94949B;
 }
@@ -63,7 +64,7 @@ body{
   	margin: 0;
   	padding: 0;
   	font-family: 'American Typewriter', sans-serif;
-  	font-size: 28px;
+  	font-size: 3vw;
 	color:#FFFEFE;
 	
 }
