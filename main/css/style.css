@@ -8,7 +8,7 @@ body{
 	.landing_animation_container{
 	width: 100%;
 	height: 100%;
-	background: white;
+	background: #FFFEFE;;
 	position: fixed;
 	top:0;
 	left:0;
@@ -34,8 +34,8 @@ body{
 	transform: translate(-50%, -50%);
 	font-family: 'American Typewriter',sans-serif ;
 	font-size: 80px;
-	color:white;
-	text-shadow: 2px 2px #D4E6F1;
+	color:#FFFEFE;
+	text-shadow: 3px 3px #94949B;
 	text-align:center;
 	transition: -webkit-text-stroke-color 2s, color 2s;
 }
@@ -43,7 +43,7 @@ body{
 .title:hover{
 	color:transparent;
 	-webkit-text-stroke-width: 3px;
-	-webkit-text-stroke-color: white;
+	-webkit-text-stroke-color:#FFFEFE;
 }
 	
 .menu{
@@ -55,8 +55,8 @@ body{
   	padding: 0;
   	font-family: 'American Typewriter', sans-serif;
   	font-size: 80px;
-	color:white;
-	text-shadow: 2px 2px #D4E6F1;
+	color:#FFFEFE;
+	text-shadow: 3px 3px #94949B;
 }
 .work_list{
 	list-style-type: none;
@@ -64,15 +64,21 @@ body{
   	padding: 0;
   	font-family: 'American Typewriter', sans-serif;
   	font-size: 28px;
-	color:white;
+	color:#FFFEFE;
 	
 }
 #menu_home:hover{
-	color:white;
+	color:transparent;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color:#FFFEFE;
 }
 #menu_about:hover{
-	color:white;
+	color:transparent;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color:#FFFEFE;
 }
 #menu_works:hover{
-	color:white;
+	color:transparent;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color:#FFFEFE;
 }
