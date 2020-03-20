@@ -1,11 +1,9 @@
 body{
-	background-image: url("../../img/clouds.jpg");
-	background-repeat: no-repeat;
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	background-image: url('../../img/SleepyFailingEasternnewt-size_restricted.gif');
+	background-size: cover;
+	height: 100vh;
+	padding:0;
+	margin:0;
 }
 	.landing_animation_container{
 	width: 100%;
