@@ -5,7 +5,7 @@ html, body {
 	height:100%;
 }
 body {
-	color:#666;
+	color:#000000;
 	background-color:rgba(0, 0, 0, 1);
 }
 h1 {
@@ -42,7 +42,7 @@ video {
 	width:100%;
 }
 .title_img{
-	width:100%;
+	width:120%;
 }
 #draggable{
 	top:0px;
@@ -99,25 +99,25 @@ video {
 	opacity:0.5;
 }
 .controls button[data-state="play"] {
-	background-image: url('../media/buttons-play.png');
+	background-image: url('../media/buttons/play.png');
 }
 .controls button[data-state="pause"] {
-	background-image: url('../media/buttons-pause.png');
+	background-image: url('../media/buttons/pause.png');
 }
 .controls button[data-state="stop"] {
-	background-image: url('../media/buttons-stop.png');
+	background-image: url('../media/buttons/stop.png');
 }
 .controls button[data-state="mute"] {
-	background-image: url('../media/buttons-mute.png');
+	background-image: url('../media/buttons/mute.png');
 }
 .controls button[data-state="unmute"] {
-	background-image: url('../media/buttons-unmute.png');
+	background-image: url('../media/buttons/unmute.png');
 }
 .controls button[data-state="volup"] {
-	background-image: url('../media/buttons-volup.png');
+	background-image: url('../media/buttons/plus.png');
 }
 .controls button[data-state="voldown"] {
-	background-image: url('../media/buttons-voldown.png');
+	background-image: url('../media/buttons/minus.png');
 }
 
 .controls progress {
@@ -128,7 +128,7 @@ video {
 	width: 100%;
 	height: 100%;
 	display: inline-block;
-	background: rgb(148, 187, 233);
+	background: rgb(0, 0, 0);
 	top:0px;
 	z-index: -10;
 }

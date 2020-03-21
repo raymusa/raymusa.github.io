@@ -119,7 +119,7 @@
 				progress.value = video.currentTime;
 				progressBackground.style.width = '100%';
 				var perc = Math.floor((video.currentTime / video.duration) * 200) + '%';
-				progressBackground.style.background = 'linear-gradient(90deg,rgb(231, 183, 80, 1) 0%, rgb(0, 0, 0, 1) '+ perc +')';
+				progressBackground.style.background = 'linear-gradient(90deg,rgb(206, 56, 223, 1) 0%, rgb(0, 0, 0, 1) '+ perc +')';
 			});
 
 			// 
