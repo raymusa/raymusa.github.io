@@ -5,7 +5,12 @@ For the most part these pages are projects and stuff from my Web Production clas
 
 
 A little info about me:
+
+
 Name: Ray
+
 Age: lol don't worry bout that, just know I'm a sophmore in College
+
 Lives: Brooklyn, New York
+
 Social Media?: atm N/A
