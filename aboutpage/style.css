@@ -1,0 +1,69 @@
+body{
+	height: 100vh;
+	width: 100vw;
+	padding:0;
+	margin:0;
+}
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.background {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.about_img {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+#draggable{
+	top:30%;
+	left:30%;
+	width: 30%;
+	position: fixed !important;
+}
+.paint_img {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+#draggable2{
+	top:15%;
+	left: 5%;
+	width: 30%;
+	position: fixed !important;
+}
+
+	.landing_animation_container{
+	width: 100%;
+	height: 100%;
+	background-image: url('https://media.giphy.com/media/edl5t7nDVPtC/giphy.gif');
+	background-repeat: no-repeat;
+	background-size:100vw 100vh;
+	position: fixed;
+	top:0%;
+	left:0%;
+	z-index: 0;
+	animation-name: background_animation;
+	animation-duration: 7s;
+	animation-fill-mode:forwards;
+	animation-delay: 1s;
+	
+}
+
+@keyframes background_animation {
+	0%   { opacity: 1; }
+	99%  { opacity: 0; z-index: 0;}
+	100% { opacity: 0; z-index: -1;}
+}
+
+
+body{
+	overflow:hidden;
+}
+
+
