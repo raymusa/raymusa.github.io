@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" type="text/css" href="con.css">
+	<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id= "poem">
+<p>
+Roses are Red<br>
+Violets are blue<br>
+Everyone sucks <br>
+But at least I'm not <span id="word?">ugly</span> like you. 
+</p>
+</div>
+
+<button onclick="myFunction()">
+shuffle!
+</button>
+
+<script>
+ 
+function myFunction(){
+  var randomNumber = Math.random();
+  var chosenWord = "";
+  var bgColor = "";
+	
+if (randomNumber > 0.5){
+	chosenWord = "smelly";
+    bgColor = "brown";
+  }
+else{
+    chosenWord = "musty";
+    bgColor = "green";
+  }
+	
+  var life = document.getElementById("word?");
+  var poem = document.getElementById("poem");
+
+  life.innerHTML = chosenWord;
+  poem.style.backgroundColor = bgColor;
+
+  console.log(randomNumber);
+}
+</script>
+</body>
+</html>
