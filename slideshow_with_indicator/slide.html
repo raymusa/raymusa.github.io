@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.slideshow-container {
+  width: 60%;
+  position: relative;
+  background: #f1f1f1f1;
+  margin:0px auto;
+}
+
+.mySlides {
+  display: none;
+  height: 400px;
+  text-align: center;
+}
+
+#slide1{
+  background-image: url('myportfolio/portfolio0.png');
+  background-size: cover;
+  background-position: center;
+color: #BF2177;
+	font-family: 'Baloo Tammudu 2', cursive;
+}
+
+#slide2{
+  background-image: url('myportfolio/portfolio1.png');
+  background-size: cover;
+  background-position: center;
+color: #E8E496;
+	font-family: 'Roboto Mono', monospace;
+	
+}
+
+#slide3{
+  background-image: url('myportfolio/portfolio3.png');
+  background-size: cover;
+  background-position: center;
+	color: #047112;
+	font-family: 'Play', sans-serif;
+}
+
+.layer_contents{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(244,49,218,1.00);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    margin:0px auto;
+    padding: 20px 0 20px 0;
+    background: #ddd;
+    width: 60%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #3F3F3C;
+}
+
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+<body>
+<div >
+<div class="slideshow-container">
+
+<div id="slide1" class="mySlides">
+  <div class="layer">
+    <div class="layer_contents">
+		<p class="author"><a href="https://www.youtube.com/watch?v=61D_IHY_l7Q">Project 1</a><br>
+		  This project focuses on color. Specifcally changing a video's colors randomly. Specifcally Blue and Red shades<br>
+		  ~Made in Max~</p>
+    </div>
+  </div>
+  
+</div>
+
+<div id="slide2" class="mySlides">
+  <div class="layer">
+    <div class="layer_contents">
+      <p class="author"><a href="https://raymusa.github.io/aboutpage/index.html">Project 2</a><br>
+		This project is my about page on my homepage. I customized to look like an old Windows 98 desktop</p>
+    </div>
+  </div>
+</div>
+
+<div id="slide3" class="mySlides">
+  <div class="layer">
+    <div class="layer_contents">
+      <p class="author"><a href="https://www.youtube.com/watch?v=m1lE5eM8swc">Project 3</a><br>
+		This project tracks mousedata to control how the sounds and colors change</p>
+    </div>
+  </div>
+</div>
+
+<a class="prev" onclick="setIndexFromSideButton(-1)">❮</a>
+<a class="next" onclick="setIndexFromSideButton(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function setIndexFromSideButton(n){
+  slideIndex = slideIndex + n;
+  showSlides();
+}
+
+function currentSlide(n) {
+  slideIndex = n;
+  showSlides();
+}
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  if (slideIndex < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
