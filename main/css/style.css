@@ -60,11 +60,13 @@ body{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-family: 'American Typewriter',sans-serif ;
+	font-family: chandler-42-regular, sans-serif;
+	font-weight: 500;
+	font-style: normal;
 	font-size: 8vw;
 	color:#FFFEFE;
 	text-shadow: 3px 3px #94949B;
-	text-align:center;
+	text-align: center;
 	transition: -webkit-text-stroke-color 2s, color 2s;
 }
 
@@ -81,7 +83,9 @@ body{
 	list-style-type: none;
   	margin: 0;
   	padding: 0;
-  	font-family: 'American Typewriter', sans-serif;
+  	font-family: chandler-42-regular, sans-serif;
+	font-weight: 500;
+	font-style: normal;
   	font-size: 8vw;
 	color:#FFFEFE;
 	text-shadow: 3px 3px #94949B;
@@ -90,7 +94,9 @@ body{
 	list-style-type: none;
   	margin: 0;
   	padding: 0;
-  	font-family: 'American Typewriter', sans-serif;
+  	font-family: chandler-42-regular, sans-serif;
+	font-weight: 500;
+	font-style: normal;
   	font-size: 3vw;
 	color:#FFFEFE;
 	
