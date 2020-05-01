@@ -1,23 +1,150 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Ray's website</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-	</head>
-	<style>
-body  {
-  background-image: url("img/gifhy.gif");
-  background-color: #cccccc;
-}
-</style>
-	<body>
-		<h1><b<>Rayhana's Musa</b></h1>
-		<div class="main_div">
-			<img src="img/ascreenshot.png" id="screenshot">
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			margin:0px;
+		}
+		#space1 {
+			position: relative;
+		  	background-color: white;
+		}
+		#space2 {
+			position: relative;
+		  	background-color: black;
+		}
+		#space3 {
+			position: relative;
+		  	background-color: black;
+		}
+		@keyframes updown {
+		  0% {
+		    top: 50%;
+		  }
+
+		  50% {
+		    top: 52%;
+		  }
+
+		  100% {
+		    top: 50%;
+		  }
+		}
+		#svg_container1{
+			cursor: pointer;
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			animation: updown 1s ease infinite;
+		}
+
+		#svg_container2{
+			cursor: pointer;
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			padding:5px;
+		}
+		#svg_container3{
+			cursor: pointer;
+			margin: 0;
+			position: absolute;
+			text-align: center;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		#pump {
+		    fill: none;
+		    stroke: #CE38DF;
+		    stroke-width: 3px;
+		    stroke-dasharray: 1200px;
+		    stroke-dashoffset: 1500px;
+		}
+		.img {
+			margin-center: 0px;
+			text-align: center;
+			
+			
+		}
+		.svg_drawing_animation{
+			
+			animation: move 6s linear forwards;  
+		    animation-delay: .2s;
+		}
+
+		@keyframes move {
+		    100% {
+		        stroke-dashoffset: 0;
+		    }
+		}
+
+	</style>
+</head>
+<body>
+	<div id="space1">
+		<div id="svg_container1" onClick="pageScrollDown()">
+			<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96"><path d="M45.2,13.2c-.9.9-1.2,8.5-1.2,28.2V68.5l-8.3-8.3c-5.3-5.3-9-8.2-10.4-8.2a4,4,0,0,0-3.4,5.7C23.5,60.6,46.6,83,48,83S72.5,60.6,74.1,57.7A4,4,0,0,0,70.7,52c-1.4,0-5.1,2.9-10.4,8.2L52,68.5V41.4C52,13.6,51.8,12,48,12A4.42,4.42,0,0,0,45.2,13.2Z"/></svg>
 		</div>
-	<div>
-	<a href="week2/index2.html">Week 2 assignment</a>
 	</div>
-	<div>
-		<a href="week3/index3.html">Week 3 assignment</a>
-	</body>
+	<div id="space2">
+		<div id="svg_container2" onClick="pageScrollDown2()">
+		<svg id="svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96"><path id="pump"d="M8,48V84H88V12H8Zm72-8V60H16V20H80ZM56,72v4H16V68H56Zm15-2.5a4,4,0,0,1-1.2,5.9c-3.5,2.2-7.4-2.7-4.8-5.9A3.87,3.87,0,0,1,71,69.5Z"/></svg>
+		 </div>
+	</div>
+	<div id="space3">
+		<div id="svgcontainer3" onClick="pageScrollUp()">
+			<div class="img">
+				<img src="css/codepoem.png" height="300" width="240" >
+			</div>
+		 </div>
+	</div>
+
+	<script type="text/javascript">
+		/* code for set full window height for each div#space1, space2, space3 */
+		/* to get window's height, use 'window.innerHeight' */
+		var space1 = document.getElementById("space1");
+		space1.style.height = window.innerHeight + "px";
+		var space2 = document.getElementById("space2");
+		space2.style.height = window.innerHeight + "px";
+		var space3 = document.getElementById("space3");
+		space3.style.height = window.innerHeight + "px";
+
+		/* implement automatic scroll */
+		/* these functions below are called when each div#space1, div#space2, div#space3 is clicked */
+		/* To move scroll down to specific point, use 'window.scrollBy([x],[y])' */
+		function pageScrollDown() {
+		    window.scrollBy(0,window.innerHeight);
+		}
+		function pageScrollDown2() {
+		    window.scrollBy(0,window.innerHeight*2);
+		}
+		/* To move scroll up to the top, use 'document.documentElement.scrollTop = 0' */
+		/* 'window.scrollBy' only works when the scroll is incremented(when scrolling down) */
+		function pageScrollUp() {
+		    document.documentElement.scrollTop = 0;
+		}
+
+		/* when we want to trigger something by user's activity, we use 'document.addEventLister' */
+		/* to get more info about the triggers other than 'scroll', plz visit here */
+		/* this code below will let browser draw pump svg logo when an user scrolls down and gets to the part where the svg is located. */
+		/* detailed explanation is on the class doc */
+		document.addEventListener('scroll', function (e) {
+			var pumpSvgContainer = document.getElementById("svg_container2");
+			var scrolledTop  = window.pageYOffset + window.innerHeight;
+			var pumpSvgContainerOffset = window.innerHeight + pumpSvgContainer.offsetTop;
+			var isPumpVisible = scrolledTop > pumpSvgContainerOffset;
+			if (isPumpVisible) {
+				document.getElementById('pump').classList.add('svg_drawing_animation');
+			}
+		});
+		
+	</script>
+
+</body>
 </html>
