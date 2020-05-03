@@ -1,5 +1,5 @@
 body{
-	background-image: url('../../img/cloudloop.gif');
+	background-image: url('https://media.giphy.com/media/l41Yv7dUQOqgcnalW/giphy.gif');
 	background-size: cover;
 	height: 100vh;
 	width: 100vw;
@@ -60,12 +60,12 @@ body{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-family: chandler-42-regular, sans-serif;
+	font-family: gothicus, serif;
 	font-weight: 500;
 	font-style: normal;
 	font-size: 8vw;
 	color:#FFFEFE;
-	text-shadow: 3px 3px #94949B;
+	text-shadow: 3px 3px #5963EF;
 	text-align: center;
 	transition: -webkit-text-stroke-color 2s, color 2s;
 }
@@ -83,19 +83,19 @@ body{
 	list-style-type: none;
   	margin: 0;
   	padding: 0;
-  	font-family: chandler-42-regular, sans-serif;
-	font-weight: 500;
+  	font-family: gothicus, sans-serif;
+	font-weight: 400;
 	font-style: normal;
   	font-size: 8vw;
 	color:#FFFEFE;
-	text-shadow: 3px 3px #94949B;
+	text-shadow: 3px 3px #5963EF;
 }
 .work_list{
 	list-style-type: none;
   	margin: 0;
   	padding: 0;
-  	font-family: chandler-42-regular, sans-serif;
-	font-weight: 500;
+  	font-family: gothicus, serif;
+	font-weight: 400;
 	font-style: normal;
   	font-size: 3vw;
 	color:#FFFEFE;
