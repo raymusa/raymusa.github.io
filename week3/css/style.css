@@ -1,5 +1,5 @@
 #package{
-	width: 720px;
+	width: 520px;
 	height: 240px;
 	background-color: red;
 	/* horizontal + vertical center align - parent div */
@@ -9,65 +9,76 @@
 
 #name{
 	/* horizontal + vertical center align - child div */
-	margin: 0;
+	margin-center: 0px;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 100px;
+    font-size: 89.3px;
     color: white;
-    font-family: sans-serif;
+    font-family: gill-sans-nova,sans-serif;
     font-style: italic;
-    font-weight: bold;
-    -webkit-text-stroke-width: 6px;
+    font-weight: 900;
+    -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: #663300;
+}
+#name: hover #kitkat_img_container{
+	
 }
 
 
 #subtitle{
 position: absolute;
-bottom: 24%;
+bottom: 33%;
 left: 50%;
     font-style: italic;
     font-color:#663300;
     font-weight: bold;
-    letter-spacing: 2px;
-    font-size: 24px;
+    letter-spacing:px;
+    font-size: 25px;
 }
 
 #weight{
 	position: absolute;
-	bottom: 7%;
+	bottom: 1%;
 	left: 3%;
-	font-family: sans-serif;
+	font-family: 'Fira Sans' ,sans-serif;
+	font-weight: bold;
 	text-align: center;
 }
 
 #calories{
 	position: absolute;
-	bottom: 7%;
+	bottom: 1%;
 	right: 3%;
-	font-family: sans-serif;
-	font-size: 9px;
+	font-family: gill-sans-nova ,sans-serif;
+	font-size: 8px;
+	font-weight: bold;
 	color: #663300;
 	text-align: center;
 	background-color:white;
 	border:3px solid #663300;
-	border-radius: 12%;
+	border-radius: 15%;
+	height:19.5%;
+	width:6.7%;
 	padding: 6px;
+	letter-spacing:0px;
+	line-height:1;
 }
 
 #subtitle2{
-	    position: absolute;
-    bottom: 16%;
-    left: 50%;
+	position: absolute;
+    bottom: 28.5%;
+    left: 56%;
     font-family: sans-serif;
     font-style: oblique;
     font-weight: bold;
     font-size: 12px;
+	letter-spacing:0px;
 }
 
 #cal_number{
+	font-family: gill-sans-nova, sans-serif;
 	font-size: 19px;
 	color:#663300;
 }
@@ -75,9 +86,12 @@ left: 50%;
 #kitkat_img_container{
 	width: 720px;
 	position: absolute;
-	top: 420px;
+	top: -55%;
+	left: 84%;
+	margin-center: 0px;
+	text-align: center;
 }
 
 #kitkat_img{
-	width: 100%;
+	width: 68%;
 }
