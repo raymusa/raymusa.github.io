@@ -1,5 +1,5 @@
 body{
-	background-color:black;
+	background-color:#201E1E;
     height: 100vh;
     width: 100vw;
     padding: 0;
@@ -12,7 +12,7 @@ body{
 	position:absolute;
 	top:0%;
 	left:0%;
-	padding:10%;
+	padding:5%;
 	width:1vw;
 	height:1vh;
 	text-align: center;
@@ -22,9 +22,10 @@ body{
 	border-radius:50%;
 }
 .color2{
+	
 	position:absolute;
 	top:10%;
-	left:14%;
+	left:10%;
 	padding:10%;
 	width:1vw;
 	height:1vh;
@@ -37,7 +38,7 @@ body{
 .color3{
 	position:absolute;
 	top:20%;
-	left:30%;
+	left:20%;
 	padding:10%;
 	width:1vw;
 	height:1vh;
@@ -50,7 +51,7 @@ body{
 .color4{
 	position:absolute;
 	top:30%;
-	left:44%;
+	left:30%;
 	padding:10%;
 	width:1vw;
 	height:1vh;
@@ -63,7 +64,7 @@ body{
 .color5{
 	position:absolute;
 	top:40%;
-	left:60%;
+	left:40%;
 	padding:10%;
 	width:1vw;
 	height:1vh;
@@ -74,9 +75,10 @@ body{
 	border-radius:50%;
 }
 .color6{
+	
 	position:absolute;
 	top:50%;
-	left:74%;
+	left:50%;
 	padding:10%;
 	width:1vw;
 	height:1vh;
@@ -89,7 +91,7 @@ body{
 .color7{
 	position:absolute;
 	top:60%;
-	left:90%;
+	left:60%;
 	padding:10%;
 	width:1vw;
 	height:1vh;
@@ -98,6 +100,29 @@ body{
 	color:rgba(237,247,254,.8);
 	background-color:rgba(238,130,298,0.4);
 	border-radius:50%;
+}
+	#landing_animation_container{
+	width: 100%;
+	height: 100%;
+	background-color:#201E1E;
+	position: fixed;
+	top:0%;
+	left:0%;
+	z-index: 0;
+	animation-name: background_animation;
+	animation-duration: 7s;
+	animation-fill-mode:forwards;
+	animation-delay: 1s;
+	
+}
+
+@keyframes background_animation {
+	0%   { opacity: 1; }
+	99%  { opacity: 0; z-index: 0;}
+	100% { opacity: 0; z-index: -1;}
+}
+body{
+	overflow:hidden;
 }
 
 @media only screen and (min-width:0px) and (max-width:180px){
@@ -124,7 +149,6 @@ body{
 	}	
 }
 @media only screen and (min-width:180px) and (max-width:360px){
-	.color1{}
 	.color2{
 		display:none;
 	}
@@ -145,8 +169,14 @@ body{
 	}
 	}
 @media only screen and (min-width:360px) and (max-width: 540px) {
-	.color1{}
-	.color2{}
+	.color2{
+	position:absolute;
+	top:10%;
+	left:10%;
+	padding:38%;
+	width:16vw;
+	height:16vh;
+	}
 	.color3{
 		display:none;
 	}
@@ -164,9 +194,22 @@ body{
 	}
 	}
 @media only screen and (min-width:540px) and (max-width:720px) {
-	.color1{}
-	.color2{}
-	.color3{}
+	.color2{
+	position:absolute;
+	top:10%;
+	left:10%;
+	padding:35%;
+	width:9vw;
+	height:9vh;
+	}
+	.color3{
+	position:absolute;
+	top:20%;
+	left:20%;
+	padding:35%;
+	width:9vw;
+	height:9vh;
+	}
 	.color4{
 		display:none;
 	}
@@ -181,10 +224,38 @@ body{
 	}
 	}
 @media only screen and (min-width:720px) and (max-width:900px) {
-	.color1{}
-	.color2{}
-	.color3{}
-	.color4{}
+	.color1{
+	position:absolute;
+	top:0%;
+	left:0%;
+	padding:6%;
+	width:1vw;
+	height:1vh;
+	}
+	.color2{
+	position:absolute;
+	top:10%;
+	left:10%;
+	padding:30%;
+	width:7vw;
+	height:7vh;
+	}
+	.color3{
+	position:absolute;
+	top:20%;
+	left:20%;
+	padding:30%;
+	width:7vw;
+	height:7vh;
+	}
+	.color4{
+	position:absolute;
+	top:30%;
+	left:30%;
+	padding:30%;
+	width:7vw;
+	height:7vh;
+	}
 	.color5{
 		display:none;
 	}
@@ -196,11 +267,38 @@ body{
 	}
 	}
 @media only screen and (min-width:900px) and (max-width:1080px) {
-	.color1{}
-	.color2{}
-	.color3{}
-	.color4{}
-	.color5{}
+	.color2{
+	position:absolute;
+	top:10%;
+	left:10%;
+	padding:25%;
+	width:5vw;
+	height:5vh;
+	}
+	.color3{
+	position:absolute;
+	top:20%;
+	left:20%;
+	padding:25%;
+	width:5vw;
+	height:5vh;
+	}
+	.color4{
+	position:absolute;
+	top:30%;
+	left:30%;
+	padding:25%;
+	width:5vw;
+	height:5vh;
+	}
+	.color5{
+	position:absolute;
+	top:40%;
+	left:40%;
+	padding:25%;
+	width:5vw;
+	height:5vh;
+	}
 	.color6{
 		display:none;
 	}
@@ -209,13 +307,45 @@ body{
 	}
 	}
 @media only screen and (min-width:1080px) and (max-width:1260px) {
-	.color1{}
-	.color2{}
-	.color3{}
-	.color4{}
-	.color5{}
+	.color2{
+	position:absolute;
+	top:10%;
+	left:10%;
+	padding:15%;
+	width:2vw;
+	height:2vh;
+	}
+	.color3{
+	position:absolute;
+	top:20%;
+	left:20%;
+	padding:15%;
+	width:2vw;
+	height:2vh;
+	}
+	.color4{
+	position:absolute;
+	top:30%;
+	left:30%;
+	padding:15%;
+	width:2vw;
+	height:2vh;
+	}
+	.color5{
+	position:absolute;
+	top:40%;
+	left:40%;
+	padding:15%;
+	width:2vw;
+	height:2vh;
+	}
 	.color6{
-		background-color
+	position:absolute;
+	top:50%;
+	left:50%;
+	padding:15%;
+	width:3vw;
+	height:3vh;
 	}
 	.color7{
 		display:none;
