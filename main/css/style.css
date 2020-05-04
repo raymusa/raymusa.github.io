@@ -9,7 +9,7 @@ body{
 	.landing_animation_container{
 	width: 100%;
 	height: 100%;
-	background: #FFFEFE;
+	background: #5A98EB;
 	position: fixed;
 	top:0%;
 	left:0%;
@@ -31,6 +31,7 @@ body{
 	width:14%;
 	height: 13px;
 	border-style: ridge;
+	border-color:#5963EF;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -40,7 +41,7 @@ body{
 .progress{
 	width:0%;
 	height: 100%;
-	background-color: #94949B;
+	background-color: #FFFEFE;
 	animation-name: progress_animation;
 	animation-duration: 4s;
 	animation-fill-mode:forwards;
@@ -99,6 +100,7 @@ body{
 	font-style: normal;
   	font-size: 3vw;
 	color:#FFFEFE;
+	text-shadow: 3px 3px #5963EF;
 	
 }
 #menu_home:hover{
