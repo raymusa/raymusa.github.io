@@ -2,13 +2,18 @@
 <html>
 <head>
 	<title>my codepoem</title>
+	<link rel=icon href="https://cdn-0.macobserver.com/imgs/tmo_articles/Exec_icon2.jpg" sizes="16x16">
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap" rel="stylesheet">
 	<style type="text/css">
 		body{
 			margin:0px;
 		}
+
 		#space1 {
 			position: relative;
-		  	background-color: white;
+		  	background-color: black;
+			font-family: 'Inconsolata', monospace;
+			font-size: 3vw;
 		}
 		#space2 {
 			position: relative;
@@ -30,11 +35,28 @@
 		  100% {
 		    top: 50%;
 		  }
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
 		}
 		#svg_container1{
 			cursor: pointer;
 			margin: 0;
 			position: absolute;
+			stroke:#CE38DF;
+			stroke-width:8.5px;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
@@ -61,8 +83,8 @@
 		}
 		#pump {
 		    fill: none;
-		    stroke: #CE38DF;
-		    stroke-width: 3px;
+		    stroke:#CE38DF;
+		    stroke-width: 5px;
 		    stroke-dasharray: 1200px;
 		    stroke-dashoffset: 1500px;
 		}
@@ -86,8 +108,9 @@
 
 	</style>
 </head>
-<body>
+<body link="#CE38DF" vlink="#CE38DF" alink="#CE38DF">
 	<div id="space1">
+	<a href="https://raymusa.github.io/" style="text-decoration:none">home?</a>
 		<div id="svg_container1" onClick="pageScrollDown()">
 			<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96"><path d="M45.2,13.2c-.9.9-1.2,8.5-1.2,28.2V68.5l-8.3-8.3c-5.3-5.3-9-8.2-10.4-8.2a4,4,0,0,0-3.4,5.7C23.5,60.6,46.6,83,48,83S72.5,60.6,74.1,57.7A4,4,0,0,0,70.7,52c-1.4,0-5.1,2.9-10.4,8.2L52,68.5V41.4C52,13.6,51.8,12,48,12A4.42,4.42,0,0,0,45.2,13.2Z"/></svg>
 		</div>
@@ -104,7 +127,6 @@
 			</div>
 		 </div>
 	</div>
-
 	<script type="text/javascript">
 		/* code for set full window height for each div#space1, space2, space3 */
 		/* to get window's height, use 'window.innerHeight' */
