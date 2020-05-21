@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>other</title>
+	<link rel=icon href="https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Places-document-multiple-icon.png" sizes="16x16">
+	<link rel="stylesheet" href="https://use.typekit.net/sln7ota.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{
+			margin:0px;
+		}
+
+		#space1 {
+			position: relative;
+		  	background-color: black;
+			font-family: gothicus, sans-serif;
+			font-weight: 400;
+			font-style: normal;
+			font-size: 3vw;
+		}
+		#space2 {
+			position: relative;
+		  	background-color: black;
+			font-family: gothicus, sans-serif;
+			font-weight: 400;
+			font-style: normal;
+			font-size: 3vw;
+		}
+		#space3 {
+			position: relative;
+		  	background-color: black;
+			font-family: gothicus, sans-serif;
+			font-weight: 400;
+			font-style: normal;
+			font-size: 3vw;
+		}
+			#space3 {
+			position: relative;
+		  	background-color: black;
+		}
+		@keyframes updown {
+		  0% {
+		    top: 50%;
+		  }
+
+		  50% {
+		    top: 52%;
+		  }
+
+		  100% {
+		    top: 50%;
+		  }
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+		}
+		#svg_container1{
+			cursor: pointer;
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			animation: updown 1s ease infinite;
+		}
+
+		#svg_container2{
+			cursor: pointer;
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			animation: updown 1s ease reverse infinite;
+		}
+		#svg_container3{
+			cursor: pointer;
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			animation: updown 1s ease infinite;
+		}
+		.img {
+			margin-center: 0px;
+			text-align: center;
+			
+			
+		}
+		.svg_drawing_animation{
+			animation: move 6s linear forwards;  
+		    animation-delay: .2s;
+		}
+
+		@keyframes move {
+		    100% {
+		        stroke-dashoffset: 0;
+		    }
+		}
+
+	</style>
+</head>
+<body link="white" vlink="white" alink="white">
+	<div id="space1">
+	<a href="https://raymusa.github.io/" style="text-decoration:none">home?</a>
+		<div id="svg_container1" onClick="pageScrollDown()">
+		<div id="img">
+		<p style="color:white; text-align:center;">Key Typed</p>
+		<a url"https://www.youtube.com/watch?v=61D_IHY_l7Q"><img src="myportfolio/portfolio0.png" width="400"></a>
+		</div>
+		</div>
+	</div>
+	<div id="space2">
+		<div id="svg_container2" onClick="pageScrollDown2()">
+		<div id="img">
+		<p style="color:white; text-align:center;">Doumentary Editing</p>
+		<a url"https://www.youtube.com/watch?v=1euTNlr-lBY&t=15s"><img src="myportfolio/portfolio2.png" width="400"></a>
+		</div>
+		 </div>
+	</div>
+		<div id="space3">
+		<div id="svg_container3" onClick="pageScrollDown3()">
+		<div id="img">
+		<p style="color:white; text-align:center;">Mouse Movement</p>
+		<a url"https://www.youtube.com/watch?v=m1lE5eM8swc"><img src="myportfolio/portfolio3.png" width="400"></a>
+		</div>
+		 </div>
+		</div>
+	<script type="text/javascript">
+		/* code for set full window height for each div#space1, space2, space3 */
+		/* to get window's height, use 'window.innerHeight' */
+		var space1 = document.getElementById("space1");
+		space1.style.height = window.innerHeight + "px";
+		var space2 = document.getElementById("space2");
+		space2.style.height = window.innerHeight + "px";
+		var space3 = document.getElementById("space3");
+		space3.style.height = window.innerHeight + "px";
+		var space3 = document.getElementById("space4");
+		space3.style.height = window.innerHeight + "px";
+
+		/* implement automatic scroll */
+		/* these functions below are called when each div#space1, div#space2, div#space3 is clicked */
+		/* To move scroll down to specific point, use 'window.scrollBy([x],[y])' */
+		function pageScrollDown() {
+		    window.scrollBy(0,window.innerHeight);
+		}
+		function pageScrollDown2() {
+		    window.scrollBy(0,window.innerHeight*2);
+		}
+		/* To move scroll up to the top, use 'document.documentElement.scrollTop = 0' */
+		/* 'window.scrollBy' only works when the scroll is incremented(when scrolling down) */
+		function pageScrollUp() {
+		    document.documentElement.scrollTop = 0;
+		}
+
+		/* when we want to trigger something by user's activity, we use 'document.addEventLister' */
+		/* to get more info about the triggers other than 'scroll', plz visit here */
+		/* this code below will let browser draw pump svg logo when an user scrolls down and gets to the part where the svg is located. */
+		/* detailed explanation is on the class doc */
+		document.addEventListener('scroll', function (e) {
+			var pumpSvgContainer = document.getElementById("svg_container2");
+			var scrolledTop  = window.pageYOffset + window.innerHeight;
+			var pumpSvgContainerOffset = window.innerHeight + pumpSvgContainer.offsetTop;
+			var isPumpVisible = scrolledTop > pumpSvgContainerOffset;
+			if (isPumpVisible) {
+				document.getElementById('pump').classList.add('svg_drawing_animation');
+			}
+		});
+		
+	</script>
+
+</body>
+</html>
