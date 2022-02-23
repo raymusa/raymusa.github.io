@@ -1,0 +1,11 @@
+Model Information:
+* title:	1 seagull
+* source:	https://sketchfab.com/3d-models/1-seagull-c6017a4c52a544a6a3f8244c80bb9e2c
+* author:	vicente betoret ferrero (https://sketchfab.com/deathcow)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "1 seagull" (https://sketchfab.com/3d-models/1-seagull-c6017a4c52a544a6a3f8244c80bb9e2c) by vicente betoret ferrero (https://sketchfab.com/deathcow) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
